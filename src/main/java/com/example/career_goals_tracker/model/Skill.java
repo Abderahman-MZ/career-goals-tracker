@@ -10,6 +10,7 @@ public class Skill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private boolean completed; // New field to mark skill completion
 
     @ManyToMany(mappedBy = "skills")
     private List<Objective> objectives;
@@ -17,8 +18,9 @@ public class Skill {
     public Skill() {
     }
 
-    public Skill(String name) {
+    public Skill(String name, boolean completed) {
         this.name = name;
+        this.completed = completed;
     }
 
     public Long getId() {
@@ -35,6 +37,14 @@ public class Skill {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 
     public List<Objective> getObjectives() {

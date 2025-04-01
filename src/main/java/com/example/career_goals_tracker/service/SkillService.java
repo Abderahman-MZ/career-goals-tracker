@@ -28,6 +28,7 @@ public class SkillService {
     public Skill updateSkill(Long id, Skill skillDetails) {
         Skill skill = getSkillById(id);
         skill.setName(skillDetails.getName());
+        skill.setCompleted(skillDetails.isCompleted()); // Updated
         return skillRepository.save(skill);
     }
 
