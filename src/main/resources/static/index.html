@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Career Goals Tracker</h1>
+
+    <h2>Users</h2>
+    <ul id="users-list"></ul>
+    <form id="user-form">
+        <input type="text" id="user-name" placeholder="Name" required>
+        <input type="email" id="user-email" placeholder="Email" required>
+        <button type="submit">Add User</button>
+    </form>
+
+    <h2>Objectives</h2>
+    <ul id="objectives-list"></ul>
+    <form id="objective-form">
+        <input type="text" id="objective-title" placeholder="Title" required>
+        <input type="text" id="objective-desc" placeholder="Description" required>
+        <button type="submit">Add Objective</button>
+    </form>
+
+    <h2>Skills</h2>
+    <ul id="skills-list"></ul>
+    <form id="skill-form">
+        <input type="text" id="skill-name" placeholder="Skill Name" required>
+        <label><input type="checkbox" id="skill-completed"> Completed</label>
+        <button type="submit">Add Skill</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
