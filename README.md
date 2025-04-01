@@ -9,14 +9,10 @@ A Spring Boot application to track career objectives, skills, and progress.
 - Simple HTML/CSS/JS front-end
 
 ## Setup
-1. Clone the repo: `git clone https://github.com/your-username/career-goals-tracker.git`
-2. Install Java 17 and Maven
+1. Clone the repo: `git clone https://github.com/Abderahman-MZ/career-goals-tracker.git`
+2. Install Java and Maven
 3. Run: `mvn spring-boot:run`
 4. Access:
    - Front-end: `http://localhost:8080/`
    - Swagger: `http://localhost:8080/swagger-ui.html`
-
-## Team
-- Leader: [Your Name]
-- Partner: [Partner Name]
 
